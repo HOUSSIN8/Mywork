@@ -1,1 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>BurgerStar</title>
+    <title>royal-burger</title>
+    <link rel="stylesheet" href="./royal.css">
+</head>
+<body>
 
+  <div class="head1">
+    <header>
+        <div class="first-bar">
+            <div class="logo">
+                Royal <i class="fa-solid fa-crown"></i> <span>Burger</span> 
+            </div>
+        </div>
+            <div class="contact">
+                <li class="list"><i class="fa-solid fa-house"></i> home</li>
+                <li class="list"><i class="fa-solid fa-phone"></i> contact</li>
+                <li class="list"><i class="fa-solid fa-location-dot"></i> position</li>
+                <li class="list"><i class="fa-solid fa-person-circle-question"></i> help</li>
+            </div>
+
+        <div class="div-social">
+            <div class="social-med"><i class="fa-brands fa-facebook"></i></div>
+            <div class="social-med"><i class="fa-brands fa-instagram"></i></div>
+            <div class="social-med"><i class="fa-brands fa-twitter"></i></div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-bar">
+            <a href="#Burger">Burger</a>
+            <a href="#Sandwich">Sandwich</a>
+            <a href="#Pizza">Pizza</a>
+            <a href="#Drinks">Drinks</a>
+        </div>
+    </nav>
+  </div>
+  <div class="page">
+    <div class="container">
+    <!-- mini-panier -->
+            <div onclick="GoToPAnier ()" id="panier">
+                <p>Panier</p>
+                <img class="img-shop-scrol" src="./shopping-cart.png" alt="">
+            </div>
+            <div id="account-com">0</div>
+
+<!-- Panier -->
+    <div id="order" data-state="hidden-order">
+      <div class="order2">
+        <div class="order25">
+            <h2 class="titlepanier">panier</h2>
+        </div>
+        <div class="Elemnt-order">
+            <!-- orders -->
+            <div class="body-panier">   
+                <div class="order"><img class="image-commande" id="imageCommande1" src="../drinks/mint-lemonade.jpg" alt="pic order"><a class="repeat-Order">0</a><span class="name-order">Name of the order : </span><div class="price-oder-panier">0 €</div></div>
+            </div> 
+        </div>
+
+            <!-- Total orders  -->
+         <div class="total-panier">
+            <span class="total-span">total  : </span>
+            <span class="total-price">0 €</span>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+<main>
+
+    <div class="title-type" id="Burger">Burger</div>
+    <div class="flex-one">
+    <div class="container2">
+        <h2 class="title2" id="burger-Celib">Burger-Celib</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis<br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note<br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img id="first-image" class="imgArticl" src="../burger-image/Double Cheeseburger.webp" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container2">
+        <h2 class="title2">Love-Burger</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../burger-image/Beyond Burger or Impossible Burger.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">28.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand1" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container2">
+        <h2 class="title2">Burger-Boss</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../burger-image/Veggie Burger.webp" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">38.<span>99 </span> €</a>
+                <a  onclick="ButtonFunction()" class="clickButtonCommand2"  href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container2">
+        <h2 class="title2">Burger-family</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../burger-image/Blue Cheese Burger.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">20.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand2" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container2">
+        <h2 class="title2">Burger-M</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../burger-image/Buffalo Chicken Burger.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand3" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container2">
+        <h2 class="title2">Burger-XX</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../burger-image/Caprese Burger.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand4" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+
+
+
+</div>
+</main>
+
+<!-- another section  -->
+<span class="Sandwich">
+
+<main>
+
+    <div class="title-type" id="Sandwich">Sandwich</div>
+    <div class="flex-one">
+    <div class="container3">
+        <h2 class="title2">Vegetarian-Panini</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../sandwich/Vegetarian Panini.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand5" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container3">
+        <h2 class="title2">Chicken-Caesar-Wrap</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../sandwich/Chicken Caesar Wrap.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand6" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container3">
+        <h2 class="title2">Tuna-Melt</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../sandwich/Tuna Melt.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand7" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container3">
+        <h2 class="title2">Moroccan-Chicken-Sandwich</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../sandwich/Moroccan Chicken Sandwich.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand8" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container3">
+        <h2 class="title2">Grilled-Chicken-Sandwich</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../sandwich/Grilled Chicken Sandwich.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand9" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container3">
+        <h2 class="title2">Philly-Cheesesteak</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">10.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">10-15 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../sandwich/Philly Cheesesteak.png" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">18.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand10" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+
+
+
+</div>
+</main>
+    
+</span>
+<!-- another section  -->
+<div class="pizza">
+
+<main>
+
+    <div class="title-type" id="Pizza">Pizza</div>
+    <div class="flex-one">
+    <div class="container4">
+        <h2 class="title2">Margherita-Pizza</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">7.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">5-10 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../pizza-image/Margherita Pizza.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">15.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand11" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container4">
+        <h2 class="title2">Hawaiian-Pizza</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">7.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">5-10 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../pizza-image/Hawaiian Pizza.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">20.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand12" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container4">
+        <h2 class="title2">Sicilian-Pizza</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">7.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">5-10 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../pizza-image/Sicilian Pizza.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">22.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand13" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container4">
+        <h2 class="title2">Pizza-Bianca</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">7.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">5-10 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../pizza-image/Pizza Bianca.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">24.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand14" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container4">
+        <h2 class="title2">Pizza-Primavera</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">7.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">5-10 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../pizza-image/Hawaiian Pizza.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">26.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand15" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container4">
+        <h2 class="title2">Tartufata-Pizza</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">7.58 €</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">5-10 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../pizza-image/Tartufata Pizza.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">22.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand16" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+
+
+
+</div>
+</main>
+    
+</div>
+<!-- another section  -->
+<div class="drinks">
+
+<main>
+
+    <div class="title-type" id="Drinks">Drinks</div>
+    <div class="flex-one">
+    <div class="container5">
+        <h2 class="title2">Ginger-Lemonade</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">offer livraison</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">0-5 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../drinks/homemade-ginger-lemonade-1024x1536.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">5.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand17" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container5">
+        <h2 class="title2">Mint-Lemonade</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">offer livraison</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">0-5 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../drinks/mint-lemonade.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">5.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand18" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container5">
+        <h2 class="title2">Monster-Energy</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">offer livraison</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">0-5 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../drinks/Monster Energy.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">5.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand19" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container5">
+        <h2 class="title2">Rockstar-Energy</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">offer livraison</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">0-5 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../drinks/Rockstar Energy.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">5.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand20" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container5">
+        <h2 class="title2">Orange-Juice</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">offer livraison</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">0-5 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../drinks/Orange Juice.jpeg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">5.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand21" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+    <div class="container5">
+        <h2 class="title2">Pineapple-Juice</h2>
+            <div class="article989">
+                <div class="div1">
+                    <li class="note1"> Avis <br><i class="fa-solid fa-thumbs-up"></i>  </li>
+                    <li  class="note2">Note <br>  
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></li>
+                    <li class="note3">frais de livraison <br><i class="fa-solid fa-truck-fast"></i>_____ <span class="fr">offer livraison</span></li>
+                    <li class="note4">pour etre pret :  <br><i class="fa-solid fa-hourglass-start"></i> ^-^ <span class="time-prt">0-5 min</span></li>
+                </div>
+                <div class="div2">
+                    <img class="imgArticl" src="../drinks/Pineapple Juice.jpg" alt="pic-burger">
+                </div>
+            </div>
+            <div class="div3">
+                <a class="price-burg">5.<span>99 </span> €</a>
+                <a onclick="ButtonFunction()" class="clickButtonCommand22" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-face-grin-hearts"></i></a>
+                <a class="link-div6" href="#"><i class="fa-solid fa-share"></i></a>
+            </div>
+    </div>
+
+
+
+</div>
+</main>
+    
+</div>
+
+<!-- another section  -->
+
+<footer>
+
+        <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <div class="footer-contact">
+          <p>123 Rue Paris PAris France </p>
+          <p>Phone: +33 6 123 456 789</p>
+          <p>Email: inforoyalburger@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <h3>Opening Hours</h3>
+          <div class="opening-hour">
+          <p>Monday - Friday: 10:00 AM - 10:00 PM</p>
+          <p>Saturday - Sunday: 11:00 AM - 11:00 PM</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <h3>Follow Us</h3>
+            <div class="footer-social">
+            <div><i class="fa-brands fa-facebook"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div ><i class="fa-brands fa-twitter"></i></div>
+            </div>
+        </div>
+
+  </footer>
+
+</div>
+</div>
+<script src="./royal.js"></script>
+</body>
+</html>
