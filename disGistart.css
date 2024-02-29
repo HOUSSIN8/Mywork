@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.page {
+    width: 100%;
+    background-color: #000;
+}
+.container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #260101;
+}
+h1 {
+    font-size: 55px;
+    margin: 20px;
+    color: beige;
+    text-transform: capitalize;
+    
+}
+h1 span {
+    color: rgb(7, 148, 203);
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    font-size: 15px;
+    gap: 20px;
+    text-transform: uppercase;
+}
+header ul li {
+    grid-area: li ;
+    
+}
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+nav a:hover {
+    color: rgb(7, 148, 203);
+}
+nav {
+    height: 80px ;
+    padding: 20px;
+
+}
+main {
+    width: 1000px;
+    margin: auto;
+    padding: 50px;
+}
+img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+.div1 {
+    display: flex;
+    justify-content: center;
+align-items: center;}
+.div2 {
+    display: flex;
+    align-items: center;
+}
+p {
+    width: 500px;
+    font-size: 22px;
+    margin: 20px;
+}
+h2 {
+    text-align: center;
+    margin: 50px;
+    font-size: 35px;
+    color: rgb(7, 148, 203);
+    text-transform: uppercase;
+}
+button {
+
+    background-color: rgb(46, 3, 3);
+    color: rgb(236, 231, 231);
+    width: 300px;
+    margin: 20px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #3b3b3b;
+}
+button:hover {
+    background-color: black;
+    color: rgb(244, 244, 244);
+}
+footer {
+
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 20px;
+}
+footer p {
+    font-size: 15px ;
+    padding: 20px;
+    width: 200px;
+    color: #575454;
+}
+footer div{
+    margin-left: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid antiquewhite;
+}
+footer h5 {
+    margin: 50px ;
+    text-align: center;
+}
